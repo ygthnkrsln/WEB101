@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #showcase {
+        background-color: lightcoral;
+        height: 500px;
+        width: 100%; /* 4 tane 25%'lik div eklemek istediğimizde 4. div'in aşağı kaymasını engeller. */
+        padding: 10px;
+        border: 5px solid darkred;
+      }
+      #how-it-works {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- content-box özelliğini kullandığımızda dışarıya taşmalar yaşanabilir fakat border-box özelliği kullanıldığında böyle bir sorun olmaz, içerik sınırlar içerisine sığdırılır. -->
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Movies</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <main>
+      <section id="showcase">
+        <h1>Welcome to MovieApp!</h1>
+      </section>
+      <section id="how-it-works">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

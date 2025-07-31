@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Internal CSS'de en son tanımlanan değer kabul edilir. */
+      h1 {
+        color: red;
+      }
+      h1 {
+        color: blue;
+        font-size: 16px;
+      }
+      #page-title {
+        border-bottom: 3px solid green;
+        color: tomato; /* ID seçicisi, sınıf seçicisinden daha yüksek önceliğe sahiptir. Bu yüzden konumu fark etmeksizin kabul edilir. */
+      }
+      .text-yellow {
+        color: yellow;
+      }
+
+      /* CSS öncelik sırası: Inline CSS > Internal CSS > External CSS */
+      /* Inlice CSS > ID Selector > Class Selector > Tag Selector > Browser Selector */
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 id="page-title" class="text-yellow" style="color: violet">
+          Welcome to MovieApp
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae,
+          placeat.
+        </p>
+      </section>
+      <section>
+        <h2 id="page-subtitle" class="text-yellow">How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

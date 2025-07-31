@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+      }
+      #first {
+        background-color: lightcoral;
+      }
+      #second {
+        background-color: lightblue;
+        /* display: none; Bu kutu görünmez olur, yer de kaplamaz. */
+        visibility: hidden; /* Bu kutu görünmez olur, ancak yer kaplamaya devam eder. */
+      }
+      #third {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="box" id="first">First</div>
+      <div class="box" id="second">Second</div>
+      <div class="box" id="third">Third</div>
+    </div>
+  </body>
+</html>

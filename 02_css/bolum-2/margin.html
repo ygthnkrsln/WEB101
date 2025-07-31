@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      #showcase {
+        background-color: lightcoral;
+        /* margin: 20px 10px 30px 50px; */
+        /* margin: 50px 30px; 50px üst ve alt, 30px sağ ve sol */
+        margin: 50px 30px 20px;
+      }
+      #how-it-works {
+        background-color: lightblue;
+        margin: 0 auto;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- margin | border | padding -->
+    <!-- İki bölümün üstten ve alttan marginleri toplanmaz, üst üste gelir ve fazla olan marginmiş gibi gözükür. Sağ ve sol marginler için geçerli değildir. -->
+    <!-- Key points:
+
+        Only vertical margins (top and bottom) collapse; left and right margins do not.
+        The collapsed margin is equal to the largest of the overlapping margins, not their sum.
+        Margin collapsing occurs between parent and first/last child, and between siblings. -->
+    <main>
+      <section id="showcase">
+        <h1>Welcome to MovieApp!</h1>
+      </section>
+      <section id="how-it-works">
+        <h2>How it works?</h2>
+      </section>
+    </main>
+  </body>
+</html>
